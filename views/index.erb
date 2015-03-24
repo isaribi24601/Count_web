@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    
+    
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <center>
+        
+    <h1>小遣い簡易計算</h1><br>
+    <style type="text/css">
+    body {background-color: #e6e6fa}
+    </style>
+    
+    <div style="border-style: solid ; border-width : 1px">
+    <h1>¥<%= @number %></h1>
+    </div>
+        <h1>収入</h1>
+    
+    <div style="display:inline-flex">
+    <form action="/plus" method="post" class="pull-left">
+        <input type="submit" value="+1" class="btn btn-primary">
+    </form>
+    
+     <form action="/plus10" method="post" class="pull-left">
+        <input type="submit" value="+10" class="btn btn-primary">
+    </form>
+        
+     <form action="/plus100" method="post" class="pull-left">
+        <input type="submit" value="+100" class="btn btn-primary">
+    </form>
+        
+     <form action="/plus1000" method="post" class="pull-left">
+        <input type="submit" value="+1000" class="btn btn-primary">
+    </form>
+        
+    </div>
+      
+        <br>
+        <br>
+        <h1>支出</h1>
+        
+         <div style="display:inline-flex">
+     <form action="/minus" method="post" class="pull-left">
+        <input type="submit" value="-1" class="btn btn-danger">
+    </form>
+        
+    <form action="/minus10" method="post" class="pull-left">
+        <input type="submit" value="-10" class="btn btn-danger">
+    </form>
+        
+    <form action="/minus100" method="post" class="pull-left">
+        <input type="submit" value="-100" class="btn btn-danger">
+    </form>
+        
+    <form action="/minus1000" method="post" class="pull-left">
+        <input type="submit" value="-1000" class="btn btn-danger">
+    </form>
+        
+        <br>
+        <br>
+             <br>
+        </div>
+    <form action="/clear" method="post">
+        <input type="submit" value="C" class="btn btn-warning">
+    </form>
+    </center>
+</body>
+</html>
