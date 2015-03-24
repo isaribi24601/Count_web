@@ -13,9 +13,6 @@ before do
   end
 end
 
-get '/' do
-  'こんにちは'
-end
 
 get '/count' do
     @number = Count.first.number
