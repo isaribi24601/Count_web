@@ -14,7 +14,7 @@ before do
 end
 
 get '/' do
-    'こんにちは。本体には5秒後にジャンプします。¥nジャンプしない場合は、<a href="https://infinite-meadow-3742.herokuapp.com/count">こちら</a>をクリック'
+    'こんにちは。本体には5秒後にジャンプします。<br>ジャンプしない場合は、<a href="https://infinite-meadow-3742.herokuapp.com/count">こちら</a>をクリック'
     end
 
 get '/count' do
